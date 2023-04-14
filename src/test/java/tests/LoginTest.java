@@ -7,7 +7,9 @@ import io.appium.java_client.MobileSelector;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
+import org.openqa.selenium.DeviceRotation;
 import org.openqa.selenium.Point;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import utils.Driver;
 
@@ -29,10 +31,6 @@ public class LoginTest {
         loginPage.passwordBox.sendKeys("t108t108");
         action.press(PointOption.point(988,1700)).release().perform();
         loginPage.girisYapButonu.click();
-
-
-
-
 
 
 

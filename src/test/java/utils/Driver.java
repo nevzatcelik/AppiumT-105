@@ -29,8 +29,10 @@ public class Driver {
               caps.setCapability(MobileCapabilityType.UDID, "emulator-5554");
            // caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
            // caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
-            caps.setCapability("appPackage","com.ailebutcem");
-            caps.setCapability("appActivity","com.ailebutcem.MainActivity");
+            caps.setCapability("appPackage","com.skypicker.main");
+            caps.setCapability("appActivity","com.kiwi.android.feature.splash.impl.ui.SplashActivity");
+            caps.setCapability(MobileCapabilityType.NO_RESET,false); // true uygulama sifirlanmiyor onceki adimlari muhafaza ediyor
+            //false ise her test baslangicinda sifirliyor
 
             // caps.setCapability(MobileCapabilityType.APP,"C:\\Users\\ahmet\\IdeaProjects\\Appium\\src\\Apps\\Calculator_8.4 (503542421)_Apkpure.apk");
 
