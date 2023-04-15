@@ -9,8 +9,8 @@ import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import utils.Driver;
-import utils.ResuableMethods;
 import utils.Reports;
+import utils.ReusableMethods;
 
 import java.io.IOException;
 import java.time.Duration;
@@ -42,7 +42,7 @@ public class KiwiTest extends Reports {
 
  */
 
-        ResuableMethods.getScreenshot("ilker");
+        ReusableMethods.getScreenshot("ilker");
     driver.findElement(By.xpath("(//*[@class='android.view.View'])[3]")).sendKeys("ohio");
 
         // eger calismiyorsa getkeyboard methodu ile klavyemiz acikken press Key ile deger gonderebiliriz
