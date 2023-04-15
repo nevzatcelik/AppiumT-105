@@ -11,7 +11,10 @@ import java.util.concurrent.TimeUnit;
 
 public class Driver {
     private static AppiumDriver appiumDriver;
-
+  static final String TELEFONADI="PIXEL";
+  static final String ANDROIDVERSION="10.0";
+  static final String PLATFORM="Android";
+  static final String OTOMASYON_ISMI="UiAutomator2";
 
     public static AppiumDriver getAppiumDriver()  {
         URL appiumServerURL = null;
@@ -24,11 +27,10 @@ public class Driver {
         if (appiumDriver == null) {
 
             DesiredCapabilities caps =new DesiredCapabilities();
-           // caps.setCapability(MobileCapabilityType.DEVICE_NAME, "PIXEL");
-           // caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10.0");
-              caps.setCapability(MobileCapabilityType.UDID, "emulator-5554");
-           // caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-           // caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
+            caps.setCapability(MobileCapabilityType.DEVICE_NAME, TELEFONADI);
+            caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, ANDROIDVERSION);
+            caps.setCapability(MobileCapabilityType.PLATFORM_NAME, PLATFORM);
+            caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, OTOMASYON_ISMI);
             caps.setCapability("appPackage","com.skypicker.main");
             caps.setCapability("appActivity","com.kiwi.android.feature.splash.impl.ui.SplashActivity");
             caps.setCapability(MobileCapabilityType.NO_RESET,false); // true uygulama sifirlanmiyor onceki adimlari muhafaza ediyor
