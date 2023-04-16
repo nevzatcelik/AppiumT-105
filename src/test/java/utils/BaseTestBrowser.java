@@ -25,9 +25,8 @@ public class BaseTestBrowser {
         if (appiumDriver == null) {
 
             DesiredCapabilities caps =new DesiredCapabilities();
-            caps.setCapability(MobileCapabilityType.DEVICE_NAME, "PIXEL2");
+            caps.setCapability(MobileCapabilityType.DEVICE_NAME, "PIXEL");
             caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, "10.0");
-            caps.setCapability(MobileCapabilityType.UDID, "emulator-5554");
             caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
             caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
             caps.setCapability(MobileCapabilityType.NO_RESET,false);

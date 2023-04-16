@@ -31,12 +31,12 @@ public class Driver {
             caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, ANDROIDVERSION);
             caps.setCapability(MobileCapabilityType.PLATFORM_NAME, PLATFORM);
             caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, OTOMASYON_ISMI);
-            caps.setCapability("appPackage","com.skypicker.main");
-            caps.setCapability("appActivity","com.kiwi.android.feature.splash.impl.ui.SplashActivity");
+           // caps.setCapability("appPackage","com.skypicker.main");
+          //  caps.setCapability("appActivity","com.kiwi.android.feature.splash.impl.ui.SplashActivity");
             caps.setCapability(MobileCapabilityType.NO_RESET,false); // true uygulama sifirlanmiyor onceki adimlari muhafaza ediyor
             //false ise her test baslangicinda sifirliyor
 
-            // caps.setCapability(MobileCapabilityType.APP,"C:\\Users\\ahmet\\IdeaProjects\\Appium\\src\\Apps\\Calculator_8.4 (503542421)_Apkpure.apk");
+            caps.setCapability(MobileCapabilityType.APP,"C:\\Users\\ahmet\\IdeaProjects\\Appium\\src\\Apps\\Calculator_8.4 (503542421)_Apkpure.apk");
 
             if (ConfigReader.getProperty("platformName").equals("Android")) {
 
